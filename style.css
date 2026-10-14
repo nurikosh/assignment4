@@ -1,0 +1,118 @@
+:root {
+  --green: #0F6B5F;
+  --orange: #F2A93B;
+  --dark: #16302B;
+  --light: #F4F7F5;
+  --line: #E6EFEC;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--dark);
+  background: var(--line);
+}
+
+.card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(22, 48, 43, 0.15);
+  overflow: hidden;
+}
+
+.card-header {
+  margin: 0;
+  padding: 1.5rem 2rem;
+  border: 0;
+  background: var(--green);
+  color: #fff;
+  font-weight: 700;
+}
+
+.form-label,
+legend {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.form-control,
+.form-select {
+  background-color: var(--light);
+  border-color: var(--line);
+  border-radius: 0.5rem;
+  color: var(--dark);
+}
+
+.form-floating {
+  --bs-body-bg: var(--light);
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.3);
+}
+
+.form-check-input:checked {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.input-group-text {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 50rem;
+  font-weight: 600;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.btn-trip {
+  --bs-btn-color: var(--green);
+  --bs-btn-border-color: var(--green);
+  --bs-btn-hover-color: var(--green);
+  --bs-btn-hover-bg: var(--light);
+  --bs-btn-hover-border-color: var(--green);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--green);
+  --bs-btn-active-border-color: var(--green);
+}
+
+.btn-find {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--orange);
+  --bs-btn-border-color: var(--orange);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d98f22;
+  --bs-btn-hover-border-color: #d98f22;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #d98f22;
+}
+
+.btn-clear {
+  --bs-btn-color: var(--dark);
+  --bs-btn-border-color: var(--dark);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--dark);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--dark);
+}
+
+.form-control:user-invalid,
+.form-select:user-invalid,
+.form-check-input:user-invalid {
+  border-color: #dc3545;
+}
+
+.form-check-input:user-invalid ~ .form-check-label {
+  color: #dc3545;
+}
+
+:user-invalid ~ .invalid-feedback {
+  display: block;
+}
